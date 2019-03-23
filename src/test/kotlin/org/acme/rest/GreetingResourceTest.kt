@@ -9,12 +9,21 @@ import org.junit.jupiter.api.Test
 open class GreetingResourceTest {
 
     @Test
-    fun testHelloEndpoint() {
+    fun testBug1575() {
         given()
-          .`when`().get("/greeting")
-          .then()
-             .statusCode(200)
-             .body(`is`("Hello ITS OK"))
+                .`when`().get("/bug/1575")
+                .then()
+                .statusCode(200)
+                .body(`is`("Hello ITS OK"))
+    }
+
+    @Test
+    fun testBugLatest() {
+        given()
+                .`when`().get("/bug/1650")
+                .then()
+                .statusCode(200)
+                .body(`is`("CUSTOMIZED"))
     }
 
 }

@@ -17,9 +17,13 @@ open class GreetingService {
     @Inject
     @ConfigProperty(name = "quarkus.datasource.password")
     lateinit var pass: String
+    // INJECTION (repeated)
+    @Inject
+    @ConfigProperty(name = "custom.config")
+    lateinit var custom: String
 
 
-    fun helloBug(): String {
+    fun helloBug1575(): String {
         val flyway = Flyway.configure()
                 .dataSource(dbURL, user, pass)
                 .load()

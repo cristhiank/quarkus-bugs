@@ -11,7 +11,7 @@
         <maven.compiler.target>1.8</maven.compiler.target>
         <kotlin.version>1.3.21</kotlin.version>
         <maven.compiler.source>1.8</maven.compiler.source>
-        <quarkus.version>0.11.0</quarkus.version>
+        <quarkus.version>0.12.0</quarkus.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
     <dependencyManagement>
@@ -51,11 +51,13 @@
             <groupId>io.quarkus</groupId>
             <artifactId>quarkus-kotlin</artifactId>
         </dependency>
+        <!-- Disabled until available on upstream/master
         <dependency>
             <groupId>io.quarkus</groupId>
             <artifactId>quarkus-flyway</artifactId>
             <version>999-SNAPSHOT</version>
         </dependency>
+        -->
         <dependency>
             <groupId>org.flywaydb</groupId>
             <artifactId>flyway-core</artifactId>

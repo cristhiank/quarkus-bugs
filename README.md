@@ -1,5 +1,8 @@
-# quarkus-flyway-bug
+# quarkus-bugs
 
-Test project for:
+Test project for reported quarkus bugs
 
-https://stackoverflow.com/questions/55233662/how-add-flyway-dependency-and-build-native-image-quarkus-java-lang-classnotfound
+List:
+
+- https://stackoverflow.com/questions/55233662/how-add-flyway-dependency-and-build-native-image-quarkus-java-lang-classnotfound
+- 
