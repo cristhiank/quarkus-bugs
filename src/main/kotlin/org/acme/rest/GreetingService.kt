@@ -17,7 +17,7 @@ open class GreetingService {
     @Inject
     @ConfigProperty(name = "quarkus.datasource.password")
     lateinit var pass: String
-    // INJECTION (repeated)
+    // INJECTION (repeated) bug #1650
     @Inject
     @ConfigProperty(name = "custom.config")
     lateinit var custom: String
@@ -29,5 +29,9 @@ open class GreetingService {
                 .load()
         flyway.migrate()
         return "Hello ITS OK"
+    }
+
+    fun helloBug1828(): String {
+        return "IT WORKS"
     }
 }

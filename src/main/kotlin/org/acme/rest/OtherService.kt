@@ -11,7 +11,7 @@ import javax.inject.Inject
  **/
 @Dependent
 class OtherService {
-    // INJECTION (repeated)
+    // INJECTION (repeated) bug #1650
     @Inject
     @ConfigProperty(name = "custom.config")
     lateinit var customConfig: String
