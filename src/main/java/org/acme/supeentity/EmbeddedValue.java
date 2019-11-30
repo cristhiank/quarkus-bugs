@@ -1,4 +1,4 @@
-package org.acme.rest;
+package org.acme.supeentity;
 
 import java.io.Serializable;
 import java.util.Objects;

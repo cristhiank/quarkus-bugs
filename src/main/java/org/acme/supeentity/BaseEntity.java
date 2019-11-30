@@ -1,4 +1,4 @@
-package org.acme.rest;
+package org.acme.supeentity;
 
 import javax.persistence.Embedded;
 import javax.persistence.MappedSuperclass;
@@ -8,11 +8,14 @@ import javax.persistence.MappedSuperclass;
  **/
 @MappedSuperclass
 public abstract class BaseEntity {
-	// CHANGE THIS TO PUBLIC AND IT WORKS :o
+	// Comment this and use getter annotation solves the issue
+	// Changing field to protected solves the issue only if super-class is in the same package than the entity-class
 	@Embedded
 	private EmbeddedValue superField;
 
-	public EmbeddedValue superField() {
+	// Uncommenting this solves the issue.
+	//@Embedded
+	public EmbeddedValue getSuperField() {
 		return superField;
 	}
 

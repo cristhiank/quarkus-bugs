@@ -3,6 +3,9 @@ package org.acme.rest;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
+import org.acme.supeentity.BaseEntity;
+import org.acme.supeentity.EmbeddedValue;
+
 /**
  * @author cristhiank on 25/11/19
  **/
